@@ -22,7 +22,7 @@
         background-image: url("background.jpg");
         background-size: cover;
         background-position: center;
-        opacity: 0.75;
+        /* opacity: 0.75; */
         background-attachment: fixed;
         padding: 0px;
     }
@@ -71,17 +71,17 @@
         font-size: x-large;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin-left: 8px;
-
     }
 
     .navbar {
+        background-color:lightslategray;
         list-style: none;
         text-align: center;
         padding-top: 18px;
         padding-bottom: 12px;
         padding-left: 25px;
         padding-right: 25px;
-        border: 2px solid yellow;
+        border: 2px solid rgb(0, 81, 255);
         border-radius: 3px;
         margin-top: 28px;
         margin-left: 22%;
@@ -95,7 +95,7 @@
     }
 
     .navbar a:hover {
-        color: aqua;
+        color: rgb(0, 60, 255);
         text-decoration: underline;
         transition: color 0.5s;
     }
@@ -118,16 +118,46 @@
     }
 
     .social_logo a i:hover {
-        color: aqua;
+        color: rgb(0, 102, 255);
         box-shadow: 0px 0px 2px 2px gray;
+    }
+    #insta:hover a i{
+        color:white;
+    }
+    #google:hover a i{
+        color: red;
     }
 
 
     /* After this Is About Section */
     .about {
         text-align: center;
-        height: 1000px;
-        background-color: wheat;
+        height: 100vh;
+        background-image: url(background.jpg);
+        background-size: cover;
+        background-position: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .bottom{
+        text-align: center;
+        height: 100vh;
+        background-image: url(background.jpg);
+        background-size: cover;
+        background-position: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .about p{
+        padding-top: 100px;
+        margin: auto;
+        text-align: center;
+        width: 750px;
+        color: rgb(247, 140, 0);
+        font-size: larger;
+        
+    }
+    b{
+        font-size: Xx-large;
+        color: white;
     }
 </style>
 
@@ -138,12 +168,12 @@
                 <img src="Logo.png" alt="Image Not Found">
             </div>
             <ul class="navbar">
-                <li class="item"><a href="">Home</a></li>
-                <li class="item"><a href="">Skills</a></li>
-                <li class="item"><a href="">Education</a></li>
-                <li class="item"><a href="">Achievements</a></li>
-                <li class="item"><a href="">Contact</a></li>
-                <li class="item"><a href="">About</a></li>
+                <li class="item"><a href=""> <strong>Home</strong> </a></li><b>|</b>
+                <li class="item"><a href=""><strong>Skills</strong></a></li><b>|</b>
+                <li class="item"><a href=""><strong>Education</strong></a></li><b>|</b>
+                <li class="item"><a href=""><strong>Achievements</strong></a></li><b>|</b>
+                <li class="item"><a href=""><strong>Contact</strong></a></li><b>|</b>
+                <li class="item"><a href=""><strong>About</strong></a></li>
             </ul>
         </div>
 
@@ -155,9 +185,9 @@
         <div class="social">
             <ul>
                 <li class="social_logo"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
-                <li class="social_logo"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+                <li class="social_logo" id="insta"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
                 <li class="social_logo"><a href="https://www.linkedin.com/in/rajveer-kumar-4757021a1/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
-                <li class="social_logo"><a href="https://myaccount.google.com/" target="_blank"><i class="fab fa-google-plus-g fa-2x"></i></a></li>
+                <li class="social_logo" id="google"><a href="https://myaccount.google.com/" target="_blank"><i class="fab fa-google-plus-g fa-2x"></i></a></li>
             </ul>
         </div>
 

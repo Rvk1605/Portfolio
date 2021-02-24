@@ -22,7 +22,7 @@
         background-image: url("background1.jpg");
         background-size: cover;
         background-position: center;
-        /* opacity: 0.75; */
+        /* opacity: 0.;  */
         background-attachment: fixed;
         padding: 0px;
     }
@@ -166,10 +166,65 @@
         display: inline-block;
         width: 250px;
         height: 250px;
-        border-radius: 120px;
+        border-radius: 130px;
         margin-top: -17vh;
         border: 3px solid white;
         padding: 0%;
+    }
+
+    /* this is skill section */
+    .skills{
+        height: 250px;
+        border: 3px solid black;
+    }
+    .skills_logo{
+        text-align: center;
+    }
+
+    .skills_logo:hover{
+        color:gray;
+        transition: 0.5s;
+    }
+    .skill_ul{
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: right;
+    }
+    .skill{
+        margin-right: 50vh;
+    }
+    #s1{
+        background-color: aqua;
+    }
+
+
+    /* this is Education section */
+    .education{
+        text-align: center;
+        height: 250px;
+        border: 3px solid black;
+    }
+
+    /* this id Achievement section */
+    .achievements{
+        text-align: center;
+        height: 250px;
+        border: 3px solid black;
+    }
+
+    /* this is project section */
+    .projects{
+        text-align: center;
+        height: 250px;
+        border: 3px solid black;
+    }
+
+    /* this is hobby section */
+    .hobbies{
+        text-align: center;
+        height: 250px;
+        border: 3px solid black;
     }
 </style>
 
@@ -180,13 +235,14 @@
                 <img src="Logo.png" alt="Image Not Found">
             </div>
             <ul class="navbar">
-                <li class="item"><a href=""> <strong>Home</strong> </a></li><b>|</b>
+                <li class="item"><a href=""><strong>Home</strong> </a></li><b>|</b>
                 <li class="item"><a href=""><strong>Skills</strong></a></li><b>|</b>
                 <li class="item"><a href=""><strong>Education</strong></a></li><b>|</b>
                 <li class="item"><a href=""><strong>Achievements</strong></a></li><b>|</b>
-                <li class="item"><a href=""><strong>Hobbies</strong></a></li><b>|</b>
-                <li class="item"><a href=""><strong>Contact</strong></a></li><b>|</b>
-                <li class="item"><a href=""><strong>About</strong></a></li>
+                <li class="item"><a href=""><strong>Projects</strong></a></li><b>|</b>
+                <li class="item"><a href=""><strong>Hobby</strong></a></li><b>|</b>
+                <li class="item"><a href=""><strong>Contact</strong></a></li>
+                
             </ul>
         </div>
 
@@ -211,18 +267,62 @@
             <div class="my_image">
                 <img src="my_image.jpg" alt="image not found">
             </div>
-            <p>Hi!, I am <strong>Rajveer Kumar</strong>,a 2nd Year B.tech Student at <strong>KIIT Univeristy</strong> .
+            <p>Hi!, I am <strong>Rajveer Kumar</strong>,a 2nd Year B.tech Student at <strong>KIIT Univeristy</strong>.
             </p>
         </div>
+
         <div class="skills">
-
+            <div class="skills_logo">
+                <i class="fas fa-chalkboard-teacher fa-3x">  Skills </i>
+            </div>
+            <div class="skills_container">
+                <ul class="skill_ul">
+                    <li class="skill">
+                        <div id="s1"><span>c++</span></div>
+                    </li>
+                    <li class="skill">Java</li>
+                    <li class="skill">HTML</li>
+                    <li class="skill">CSS</li>
+                </ul>
+            </div>
         </div>
-        <div class="experience">
 
-        </div>
+
         <div class="education">
-
+            <div class="education_logo">
+                <i class="fas fa-book-reader fa-3x">  Education</i>
+            </div>
+            <div class="education_container"></div>
         </div>
+
+        <div class="achievements">
+            <div class="achievements_logo">
+
+            </div>
+            <div class="achievements_container">
+                <i class="fas fa-user-graduate fa-3x">  Achievements</i>
+            </div>
+        </div>
+
+
+        <div class="projects">
+            <div class="projects_logo">
+                <i class="fas fa-user-astronaut fa-3x">  Projects</i>
+            </div>
+            <div class="projects_container">
+
+            </div>
+        </div>
+
+        <div class="hobbies">
+            <div class="hobbies_logo">
+                <i class="fas fa-user-astronaut fa-3x">  Hobbies</i>
+            </div>
+            <div class="hobbies_container">
+
+            </div>
+        </div>
+
     </main>
 
     <footer class="bottom">

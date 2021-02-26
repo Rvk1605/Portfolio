@@ -60,10 +60,12 @@
         color: rgb(255, 251, 0);
         margin-left: 175px;
     }
-.p2:hover{
-    color:aqua;
-    transition: color 2s;
-}
+
+    .p2:hover {
+        color: aqua;
+        transition: color 2s;
+    }
+
     .desg {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
@@ -76,7 +78,7 @@
     }
 
     .navbar {
-        background-color:lightsteelblue;
+        background-color: lightsteelblue;
         list-style: none;
         text-align: center;
         padding-top: 12px;
@@ -84,7 +86,7 @@
         padding-left: 25px;
         padding-right: 25px;
         border-radius: 3px;
-        margin-left: 11%; 
+        margin-left: 11%;
         position: fixed;
         margin-top: 0%;
         margin-left: 125px;
@@ -125,10 +127,12 @@
         color: rgb(0, 102, 255);
         box-shadow: 0px 0px 2px 2px gray;
     }
-    #insta:hover a i{
-        color:white;
+
+    #insta:hover a i {
+        color: white;
     }
-    #google:hover a i{
+
+    #google:hover a i {
         color: red;
     }
 
@@ -139,30 +143,34 @@
         height: 50vh;
         background-size: cover;
         background-position: center;
-        background-color:white;
+        background-color: white;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
-    .bottom{
+
+    .bottom {
         text-align: center;
         height: 100vh;
         background-size: cover;
         background-position: center;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
-    .about p{
+
+    .about p {
         padding-top: 40px;
         margin: auto;
         text-align: center;
         width: 750px;
         color: rgb(0, 37, 247);
         font-size: larger;
-        
+
     }
-    b{
+
+    b {
         font-size: Xx-large;
         color: white;
     }
-    .my_image img{
+
+    .my_image img {
         display: inline-block;
         width: 250px;
         height: 250px;
@@ -173,55 +181,72 @@
     }
 
     /* this is skill section */
-    .skills{
+    .skills {
         height: 250px;
         border: 3px solid black;
     }
-    .skills_logo{
+
+    .skills_logo {
         text-align: center;
     }
 
-    .skills_logo:hover{
-        color:gray;
+    .skills_logo:hover {
+        color: gray;
         transition: 0.5s;
     }
-    .skill_ul{
+
+    .skills_container{
+        width: 90%;
         display: flex;
-        list-style: none;
         flex-wrap: wrap;
-        justify-content: right;
+        justify-content:flex-start;
+        
     }
-    .skill{
-        margin-right: 50vh;
+
+    .skills_progress{
+        width: 10rem;
+        height: 1.5rem;
+        background-color: lightslategray;
+        border-radius: 0.8rem;
+        margin-left: 60px;
+        margin-top: 50px;
     }
-    #s1{
-        background-color: aqua;
+
+    .eighty_percent{
+        width: 80%;
+        height: inherit;
+        border-radius: 0.8rem;
+        background-color: chartreuse;
+    }
+
+    span{
+        margin-left: 20px;
     }
 
 
     /* this is Education section */
-    .education{
+    .education {
         text-align: center;
         height: 250px;
         border: 3px solid black;
     }
 
     /* this id Achievement section */
-    .achievements{
+    .achievements {
         text-align: center;
         height: 250px;
         border: 3px solid black;
     }
 
     /* this is project section */
-    .projects{
+    .projects {
         text-align: center;
         height: 250px;
         border: 3px solid black;
     }
 
     /* this is hobby section */
-    .hobbies{
+    .hobbies {
         text-align: center;
         height: 250px;
         border: 3px solid black;
@@ -242,7 +267,7 @@
                 <li class="item"><a href=""><strong>Projects</strong></a></li><b>|</b>
                 <li class="item"><a href=""><strong>Hobby</strong></a></li><b>|</b>
                 <li class="item"><a href=""><strong>Contact</strong></a></li>
-                
+
             </ul>
         </div>
 
@@ -253,10 +278,14 @@
 
         <div class="social">
             <ul>
-                <li class="social_logo"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
-                <li class="social_logo" id="insta"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-                <li class="social_logo"><a href="https://www.linkedin.com/in/rajveer-kumar-4757021a1/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
-                <li class="social_logo" id="google"><a href="https://myaccount.google.com/" target="_blank"><i class="fab fa-google-plus-g fa-2x"></i></a></li>
+                <li class="social_logo"><a href="https://www.facebook.com/" target="_blank"><i
+                            class="fab fa-facebook fa-2x"></i></a></li>
+                <li class="social_logo" id="insta"><a href="https://www.instagram.com/" target="_blank"><i
+                            class="fab fa-instagram fa-2x"></i></a></li>
+                <li class="social_logo"><a href="https://www.linkedin.com/in/rajveer-kumar-4757021a1/"
+                        target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+                <li class="social_logo" id="google"><a href="https://myaccount.google.com/" target="_blank"><i
+                            class="fab fa-google-plus-g fa-2x"></i></a></li>
             </ul>
         </div>
 
@@ -272,25 +301,67 @@
         </div>
 
         <div class="skills">
+
             <div class="skills_logo">
-                <i class="fas fa-chalkboard-teacher fa-3x">  Skills </i>
+                <i class="fas fa-chalkboard-teacher fa-3x"> Skills </i>
             </div>
+
             <div class="skills_container">
-                <ul class="skill_ul">
-                    <li class="skill">
-                        <div id="s1"><span>c++</span></div>
-                    </li>
-                    <li class="skill">Java</li>
-                    <li class="skill">HTML</li>
-                    <li class="skill">CSS</li>
-                </ul>
+                <div class="skills_progress">
+                    <div class="eighty_percent">
+                        <div class="skill_name">
+                            <span>C</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills_progress">
+                    <div class="eighty_percent">
+                        <div class="skill_name">
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills_progress">
+                    <div class="eighty_percent">
+                        <div class="skill_name">
+                            <span>HTML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills_progress">
+                    <div class="eighty_percent">
+                        <div class="skill_name">
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills_progress">
+                    <div class="eighty_percent">
+                        <div class="skill_name">
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills_progress">
+                    <div class="eighty_percent">
+                        <div class="skill_name">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
 
 
         <div class="education">
             <div class="education_logo">
-                <i class="fas fa-book-reader fa-3x">  Education</i>
+                <i class="fas fa-book-reader fa-3x"> Education</i>
             </div>
             <div class="education_container"></div>
         </div>
@@ -300,14 +371,14 @@
 
             </div>
             <div class="achievements_container">
-                <i class="fas fa-user-graduate fa-3x">  Achievements</i>
+                <i class="fas fa-user-graduate fa-3x"> Achievements</i>
             </div>
         </div>
 
 
         <div class="projects">
             <div class="projects_logo">
-                <i class="fas fa-user-astronaut fa-3x">  Projects</i>
+                <i class="fas fa-user-astronaut fa-3x"> Projects</i>
             </div>
             <div class="projects_container">
 
@@ -316,7 +387,7 @@
 
         <div class="hobbies">
             <div class="hobbies_logo">
-                <i class="fas fa-user-astronaut fa-3x">  Hobbies</i>
+                <i class="fas fa-user-astronaut fa-3x"> Hobbies</i>
             </div>
             <div class="hobbies_container">
 

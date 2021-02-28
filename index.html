@@ -18,13 +18,12 @@
     }
 
     .header {
-        height: 78vh;
+        height: 72vh;
         background-image: url("background1.jpg");
         background-size: cover;
         background-position: center;
         /* opacity: 0.;  */
         background-attachment: fixed;
-        padding: 0px;
     }
 
     .logo {
@@ -34,7 +33,7 @@
     .logo img {
         display: block;
         margin: 0px 10px 10px 10px;
-        height: 60px;
+        height: 10vh;
         width: 75px;
     }
 
@@ -176,13 +175,14 @@
         height: 250px;
         border-radius: 130px;
         margin-top: -17vh;
-        border: 3px solid white;
+        border: 3px solid rgb(9, 6, 158);
         padding: 0%;
     }
 
     /* this is skill section */
     .skills {
-        height: 250px;
+        height: 50vh;
+        background-color: whitesmoke;
     }
 
     .skills_logo {
@@ -194,97 +194,139 @@
         transition: 0.5s;
     }
 
-    .skills_container{
+    .skills_container {
         display: flex;
         flex-wrap: wrap;
-        justify-content:flex-start;
+        justify-content: flex-start;
         align-items: center;
-        width:auto;
+        width: auto;
         margin-left: 50px;
-        
+
     }
 
-    .skills_progress{
-        width: 10rem;
-        height: 1.5rem;
-        background-color:gray;
+    .skills_progress {
+        width: 20rem;
+        height: 1.25rem;
+        background-color: gray;
         border-radius: 0.8rem;
-        margin-left: 100px;
+        margin-left: 175px;
         margin-top: 50px;
     }
-    .seventy_percent{
+
+    .seventy_percent {
         width: 70%;
         height: inherit;
         border-radius: 0.8rem;
         background-color: rgb(0, 255, 191);
     }
 
-    .eighty_percent{
+    .eighty_percent {
         width: 80%;
         height: inherit;
         border-radius: 0.8rem;
         background-color: rgb(179, 255, 0);
     }
 
-    .sixty_percent{
+    .sixty_percent {
         width: 60%;
         height: inherit;
         border-radius: 0.8rem;
         background-color: rgb(145, 255, 0);
     }
 
-    .fifty_percent{
+    .fifty_percent {
         width: 50%;
         height: inherit;
         border-radius: 0.8rem;
         background-color: rgb(229, 255, 0);
     }
-    .forty_percent{
+
+    .forty_percent {
         width: 40%;
         height: inherit;
         border-radius: 0.8rem;
         background-color: rgb(255, 174, 0);
     }
 
-    .thirty_percent{
+    .thirty_percent {
         width: 30%;
         height: inherit;
         border-radius: 0.8rem;
         background-color: rgb(255, 60, 0);
     }
 
-    span{
-        margin-left: 20px;
+    span {
+        margin-left: 1.5em;
     }
-    
-
 
     /* this is Education section */
     .education {
         text-align: center;
-        height: 250px;
+        height: 100vh;
         border: 3px solid black;
     }
 
     /* this id Achievement section */
     .achievements {
-        text-align: center;
-        height: 250px;
-        border: 3px solid black;
+        height: 100vh;
+        background-color: bisque;
     }
+
+    .achievements_logo {
+        text-align: center;
+    }
+
+    .achievements_logo:hover {
+        color: rgb(95, 93, 93);
+        transition: 0.5s;
+    }
+
+    .achievements_container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .certificate img {
+        margin-top: 75px;
+        width: 500px;
+        height: 350px;
+    }
+
+
 
     /* this is project section */
     .projects {
         text-align: center;
-        height: 250px;
+        height: 100vh;
         border: 3px solid black;
     }
 
     /* this is hobby section */
     .hobbies {
         text-align: center;
-        height: 250px;
+        height: 100vh;
         border: 3px solid black;
+    }
+    /* this is contact section */
+    .contact{
+        height: 100vh;
+        background: linear-gradient(75deg,rgb(58, 144, 243),rgb(0, 255, 234));
+    }
+    .contact_logo{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+    }
+    .contact_logo img{
+        height: 60px;
+        width: 60px; 
+    }
+    .contact p{
+        margin-top: 0%;
+        font-size:60px;
+        font-weight:bold;
+        margin-left: 10px;
     }
 </style>
 
@@ -402,12 +444,23 @@
         </div>
 
         <div class="achievements">
-            <div class="achievements_logo">
 
-            </div>
-            <div class="achievements_container">
+            <div class="achievements_logo">
                 <i class="fas fa-user-graduate fa-3x"> Achievements</i>
             </div>
+
+            <div class="achievements_container">
+
+                <div class="certificate">
+                    <img src="achievement1.png" alt="Image Not Found">
+                </div>
+
+                <div class="certificate">
+                    <img src="achievement2.png" alt="Image Not Found">
+                </div>
+
+            </div>
+
         </div>
 
 
@@ -431,8 +484,10 @@
 
     </main>
 
-    <footer class="bottom">
-        This is Foot
+    <footer class="contact">
+        <div class="contact_logo">
+            <img src="communicate.svg" alt="Image Not Found"><p>Contacts</p>
+        </div>
     </footer>
 </body>
 

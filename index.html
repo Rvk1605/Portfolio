@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +18,7 @@
 
     .header {
         height: 72vh;
-        background-image: url("background1.jpg");
+        background-image: url("https://source.unsplash.com/WLUHO9A_xik/1600x900");
         background-size: cover;
         background-position: center;
         /* opacity: 0.;  */
@@ -77,7 +76,7 @@
     }
 
     .navbar {
-        background-color: lightsteelblue;
+        background-color:slategrey;
         list-style: none;
         text-align: center;
         padding-top: 12px;
@@ -98,7 +97,7 @@
     }
 
     .navbar a:hover {
-        color: rgb(0, 60, 255);
+        color:wheat;
         text-decoration: underline;
         transition: color 0.5s;
     }
@@ -175,13 +174,14 @@
         height: 250px;
         border-radius: 130px;
         margin-top: -17vh;
-        border: 3px solid rgb(9, 6, 158);
+        border: 3px solid rgb(246, 246, 250);
         padding: 0%;
     }
 
     /* this is skill section */
     .skills {
-        height: 50vh;
+        padding-top: 75px;
+        height: 65vh;
         background-color: whitesmoke;
     }
 
@@ -201,6 +201,7 @@
         align-items: center;
         width: auto;
         margin-left: 50px;
+        margin-top: 30px;
 
     }
 
@@ -261,14 +262,54 @@
 
     /* this is Education section */
     .education {
+        padding-top: 75px;
         text-align: center;
-        height: 100vh;
-        border: 3px solid black;
+        height: 150vh;
+    }
+
+    .education_container{
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .education_box{
+        padding: 10px;
+        position: relative;
+        display: block;
+        height: 200px;
+        width: 40%;
+        margin: 25px;
+        background-color: rgb(220, 224, 224);
+        z-index: -1;
+    }
+
+    .education_box:nth-child(2n){
+        left: 55%;
+    }
+
+    .education_divider{
+        position:absolute;
+        height: 80%;
+        width: 30px;
+        background-color: gray;
+        top: 260%;
+        left: 48%;
+        z-index: -1;
+    }
+    .divider_icon{
+        position: sticky;
+        transform: rotate(90deg);
+        top: 30%;
+    }
+    .divider_icon i{
+        color: orangered;
+
     }
 
     /* this id Achievement section */
     .achievements {
-        height: 100vh;
+        padding-top: 75px;  
+        height: 175vh;
         background-color: bisque;
     }
 
@@ -282,6 +323,7 @@
     }
 
     .achievements_container {
+        margin-top: 10px;
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
@@ -290,13 +332,14 @@
     .certificate img {
         margin-top: 75px;
         width: 500px;
-        height: 350px;
+        height: 400px;
     }
 
 
 
     /* this is project section */
     .projects {
+        padding-top: 75px;
         text-align: center;
         height: 100vh;
         border: 3px solid black;
@@ -304,12 +347,14 @@
 
     /* this is hobby section */
     .hobbies {
+        padding-top: 75px;
         text-align: center;
         height: 100vh;
         border: 3px solid black;
     }
     /* this is contact section */
     .contact{
+        padding-top: 75px;
         height: 100vh;
         background: linear-gradient(75deg,rgb(58, 144, 243),rgb(0, 255, 234));
     }
@@ -327,6 +372,16 @@
         font-size:60px;
         font-weight:bold;
         margin-left: 10px;
+        
+    }
+
+    .form{
+        width: 750px;
+        margin-left: 25px;
+    }
+    #skill:target{
+        display: "";
+        
     }
 </style>
 
@@ -337,19 +392,19 @@
                 <img src="Logo.png" alt="Image Not Found">
             </div>
             <ul class="navbar">
-                <li class="item"><a href=""><strong>Home</strong> </a></li><b>|</b>
-                <li class="item"><a href=""><strong>Skills</strong></a></li><b>|</b>
-                <li class="item"><a href=""><strong>Education</strong></a></li><b>|</b>
-                <li class="item"><a href=""><strong>Achievements</strong></a></li><b>|</b>
-                <li class="item"><a href=""><strong>Projects</strong></a></li><b>|</b>
-                <li class="item"><a href=""><strong>Hobby</strong></a></li><b>|</b>
-                <li class="item"><a href=""><strong>Contact</strong></a></li>
+                <li class="item" ><a href="index.html"><strong>Home</strong> </a></li><b>|</b>
+                <li class="item" ><a href="#skillshow"><strong>Skills</strong></a></li><b>|</b>
+                <li class="item"><a href="#educationshow"><strong>Education</strong></a></li><b>|</b>
+                <li class="item"><a href="#achievementshow"><strong>Achievements</strong></a></li><b>|</b>
+                <li class="item"><a href="#projectshow"><strong>Projects</strong></a></li><b>|</b>
+                <li class="item"><a href="#hobbiesshow"><strong>Hobby</strong></a></li><b>|</b>
+                <li class="item"><a href="#contactshow"><strong>Contact</strong></a></li>
 
             </ul>
         </div>
 
         <div class="hello">
-            <p class="p1">Hola, I'm <br></p>
+            <p class="p1">Hello, I'm <br></p>
             <p class="p2">Rajveer</p>
         </div>
 
@@ -377,8 +432,9 @@
             </p>
         </div>
 
-        <div class="skills">
 
+        <a name="skillshow"></a>
+        <div class="skills" >
             <div class="skills_logo">
                 <i class="fas fa-chalkboard-teacher fa-3x"> Skills </i>
             </div>
@@ -435,16 +491,39 @@
 
         </div>
 
-
+        <a name="educationshow"></a>
         <div class="education">
             <div class="education_logo">
                 <i class="fas fa-book-reader fa-3x"> Education</i>
             </div>
-            <div class="education_container"></div>
+            <div class="education_container">
+                <div class="education_box">
+                    <h1 style="color: blue;">Xth</h1>
+                    <h3 style="color: rgb(9, 255, 0);">St Dominic Savio's High School</h3>
+                    <h4>CGPA : 9.4</h4>
+                </div>
+                <div class="education_box">
+                    <h1 style="color: blue;">10+2</h1>
+                    <h3 style="color: rgb(30, 255, 0);">St Dominic Savio's High School</h3>
+                    <h4> Percentage : 81%</h4>
+                </div>
+                <div class="education_box">
+                    <h1 style="color: blue;">B-tech</h1>
+                    <h3 style="color: rgb(0, 255, 42);">KIIT University</h3>
+                    <h4> CGPA : 9.4</h4>
+                </div>
+                <div class="path"></div>
+                <div class="education_divider">
+                    <div class="divider_icon">
+                        <i class="fas fa-fighter-jet fa-2x"></i>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="achievements">
 
+        <a name="achievementshow"></a>
+        <div class="achievements">
             <div class="achievements_logo">
                 <i class="fas fa-user-graduate fa-3x"> Achievements</i>
             </div>
@@ -459,11 +538,14 @@
                     <img src="achievement2.png" alt="Image Not Found">
                 </div>
 
-            </div>
+                <div class="certificate">
+                    <img src="achievement3.png" alt="Image Not Found">
+                </div>
 
+            </div>
         </div>
 
-
+        <a name="projectshow"></a>
         <div class="projects">
             <div class="projects_logo">
                 <i class="fas fa-user-astronaut fa-3x"> Projects</i>
@@ -473,6 +555,7 @@
             </div>
         </div>
 
+        <a name="hobbiesshow"></a>
         <div class="hobbies">
             <div class="hobbies_logo">
                 <i class="fas fa-user-astronaut fa-3x"> Hobbies</i>
@@ -484,9 +567,25 @@
 
     </main>
 
+    <a name="contactshow"></a>
     <footer class="contact">
         <div class="contact_logo">
             <img src="communicate.svg" alt="Image Not Found"><p>Contacts</p>
+        </div>
+        <div class="form">
+            <form action="backened.php">
+                <div>
+                    Name : <input type="text" placeholder="name">
+                </div>
+                <br>
+                <div>
+                    Phone no.: <input type="tel">
+                </div>
+                <br>
+                <div>
+                    Email : <input type="email">
+                </div>
+            </form>
         </div>
     </footer>
 </body>

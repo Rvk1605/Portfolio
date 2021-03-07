@@ -356,7 +356,7 @@
     /* this is contact section */
     .contact{
         padding-top: 75px;
-        height: 90vh;
+        height: 100vh;
         background: linear-gradient(75deg,rgb(58, 144, 243),rgb(0, 255, 234));
     }
     .contact_logo{
@@ -376,9 +376,45 @@
         
     }
 
-    .form{
-        width: 750px;
-        margin-left: 25px;
+    .form_container{
+        text-align: center;
+        width: 50%;
+        position: absolute;
+        left: 2%;
+    }
+
+    .form_container h1{
+        font-size: 40px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+    .form_container h2{
+        text-align:left;
+    }
+    .box{
+        width: 65%;
+        border-bottom: 2px solid purple;
+        margin-left: 100px;
+    }
+    .box input{
+        width: 70%;
+        background: none;
+        border: none;
+        outline: none;
+        
+    }
+    ::placeholder {
+        color:rgba(255, 255, 255, 0.747);
+        opacity: 0.9;
+        font-size: medium;
+    }
+    .btn button{
+        cursor: pointer;
+        outline: none;
+        margin-top: 30px;
+        padding: 10px;
+        width: 110px;
+        border-radius: 25px;
     }
 </style>
 
@@ -569,18 +605,25 @@
         <div class="contact_logo">
             <img src="communicate.svg" alt="Image Not Found"><p>Contacts</p>
         </div>
-        <div class="form">
+        <div class="form_container">
+            <h1>Contact ME!</h1>
             <form action="backened.php">
-                <div>
-                    Name : <input type="text" placeholder="name">
+                <div class="box">
+                    <h2>Your Name</h2>
+                    <input type="text" placeholder="Enter your name">
                 </div>
                 <br>
-                <div>
-                    Phone no.: <input type="tel">
+                <div class="box">
+                    <h2>Your E-mail</h2>
+                    <input type="email" placeholder="Enter your e-mail">
                 </div>
                 <br>
-                <div>
-                    Email : <input type="email">
+                <div class="box">
+                    <h2>Your Message</h2>
+                    <input type="text" placeholder=" Enter your message">
+                </div>
+                <div class="btn">
+                    <button>SEND</button>
                 </div>
             </form>
         </div>

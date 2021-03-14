@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,9 +18,11 @@
     }
 
     .header {
-        height: 75vh;
+        height: 72vh;
+        width: 100vw;
         background-image: url("https://source.unsplash.com/WLUHO9A_xik/1600x900");
-        background-size: cover;
+        background-size: 100vw;
+        background-repeat: no-repeat;
         background-position: center;
         /* opacity: 0.;  */
         background-attachment: fixed;
@@ -76,7 +79,7 @@
     }
 
     .navbar {
-        background-color:slategrey;
+        background-color: slategrey;
         list-style: none;
         text-align: center;
         padding-top: 7px;
@@ -97,7 +100,7 @@
     }
 
     .navbar a:hover {
-        color:wheat;
+        color: wheat;
         text-decoration: underline;
         transition: color 0.5s;
     }
@@ -182,7 +185,7 @@
     .skills {
         padding-top: 70px;
         height: 80vh;
-        background:linear-gradient(45deg,rgb(1, 250, 134),rgb(255, 236, 68));
+        background: linear-gradient(45deg, rgb(1, 250, 134), rgb(255, 236, 68));
     }
 
     .skills_logo {
@@ -265,15 +268,16 @@
         padding-top: 70px;
         text-align: center;
         height: 160vh;
-        
+
     }
 
-    .education_container{
+    .education_container {
         margin-top: 100px;
         margin-left: 100px;
         margin-right: 100px;
     }
-    .education_box{
+
+    .education_box {
         padding: 10px;
         position: relative;
         display: block;
@@ -284,12 +288,12 @@
         z-index: -1;
     }
 
-    .education_box:nth-child(2n){
+    .education_box:nth-child(2n) {
         left: 55%;
     }
 
-    .education_divider{
-        position:absolute;
+    .education_divider {
+        position: absolute;
         height: 85%;
         width: 30px;
         background-color: gray;
@@ -297,21 +301,23 @@
         left: 48%;
         z-index: -1;
     }
-    .divider_icon{
+
+    .divider_icon {
         position: sticky;
         transform: rotate(90deg);
         top: 30%;
     }
-    .divider_icon i{
+
+    .divider_icon i {
         color: orangered;
 
     }
 
     /* this id Achievement section */
     .achievements {
-        padding-top: 75px;  
+        padding-top: 75px;
         height: 160vh;
-        background:repeating-linear-gradient(45deg,rgb(0, 255, 115),rgb(255, 251, 14) 10px);
+        background: repeating-linear-gradient(45deg, rgb(0, 255, 115), rgb(255, 251, 14) 10px);
     }
 
     .achievements_logo {
@@ -332,8 +338,8 @@
 
     .certificate img {
         margin-top: 100px;
-        width: 440px;
-        height: 300px;
+        width: 40vw;
+        height: 50vh;
     }
 
 
@@ -353,69 +359,111 @@
         height: 100vh;
         border: 3px solid black;
     }
+
     /* this is contact section */
-    .contact{
+    .contact {
         padding-top: 75px;
         height: 100vh;
-        background: linear-gradient(75deg,rgb(58, 144, 243),rgb(0, 255, 234));
+        background: linear-gradient(75deg, rgb(58, 144, 243), rgb(0, 255, 234));
     }
-    .contact_logo{
+
+    .contact_logo {
         display: flex;
-        justify-content:center;
+        justify-content: center;
         flex-wrap: wrap;
     }
-    .contact_logo img{
+
+    .contact_logo img {
         height: 60px;
-        width: 60px; 
-    }
-    .contact p{
-        margin-top: 0%;
-        font-size:60px;
-        font-weight:bold;
-        margin-left: 10px;
-        
+        width: 60px;
     }
 
-    .form_container{
+    .contact p {
+        margin-top: 0%;
+        font-size: 60px;
+        font-weight: bold;
+        margin-left: 10px;
+
+    }
+
+    .contact_content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        align-items: center;
+
+    }
+    .form_container {
         text-align: center;
         width: 50%;
-        position: absolute;
-        left: 2%;
     }
 
-    .form_container h1{
+    .form_container h1 {
         font-size: 40px;
         font-weight: bold;
         padding-bottom: 10px;
     }
-    .form_container h2{
-        text-align:left;
+
+    .form_container h2 {
+        text-align: left;
     }
-    .box{
+
+    .box {
         width: 65%;
         border-bottom: 2px solid purple;
         margin-left: 100px;
     }
-    .box input{
+
+    .box input {
         width: 70%;
         background: none;
         border: none;
         outline: none;
-        
+
     }
+
     ::placeholder {
-        color:rgba(255, 255, 255, 0.747);
+        color: rgba(255, 255, 255, 0.747);
         opacity: 0.9;
         font-size: medium;
     }
-    .btn button{
+
+    .btn button {
         cursor: pointer;
         outline: none;
         margin-top: 30px;
         padding: 10px;
         width: 110px;
         border-radius: 25px;
+        border: none;
     }
+
+    .btn button a {
+        text-decoration: none;
+        font-size: larger;
+        font-weight: bold;
+        color: black;
+
+    }
+
+    .btn button:hover {
+        background-color: rgb(247, 63, 63);
+        box-shadow: 2px 2px 5px 2px;
+        transition: 0.3s;
+    }
+    .address_container{
+        height: 75vh;
+        width: 30%;
+    }
+    .address_container p{
+        font-size: medium;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #mail a{
+        text-decoration: none;
+
+    }
+
 </style>
 
 <body>
@@ -425,8 +473,8 @@
                 <img src="Logo.png" alt="Image Not Found">
             </div>
             <ul class="navbar">
-                <li class="item" ><a href="index.html"><strong>Home</strong> </a></li><b>|</b>
-                <li class="item" ><a href="#skillshow"><strong>Skills</strong></a></li><b>|</b>
+                <li class="item"><a href="index.html"><strong>Home</strong> </a></li><b>|</b>
+                <li class="item"><a href="#skillshow"><strong>Skills</strong></a></li><b>|</b>
                 <li class="item"><a href="#educationshow"><strong>Education</strong></a></li><b>|</b>
                 <li class="item"><a href="#achievementshow"><strong>Achievements</strong></a></li><b>|</b>
                 <li class="item"><a href="#projectshow"><strong>Projects</strong></a></li><b>|</b>
@@ -467,7 +515,7 @@
 
 
         <a name="skillshow"></a>
-        <div class="skills" >
+        <div class="skills">
             <div class="skills_logo">
                 <i class="fas fa-chalkboard-teacher fa-3x"> Skills </i>
             </div>
@@ -603,8 +651,11 @@
     <a name="contactshow"></a>
     <footer class="contact">
         <div class="contact_logo">
-            <img src="communicate.svg" alt="Image Not Found"><p>Contacts</p>
+            <img src="communicate.svg" alt="Image Not Found">
+            <p>Contacts</p>
         </div>
+
+        <div class="contact_content">
         <div class="form_container">
             <h1>Contact ME!</h1>
             <form action="backened.php">
@@ -623,10 +674,20 @@
                     <input type="text" placeholder=" Enter your message">
                 </div>
                 <div class="btn">
-                    <button>SEND</button>
+                    <button><a href="mailto:1906351@kiit.ac.in">SEND</a></button>
                 </div>
             </form>
         </div>
+        <div class="address_container">
+            <h1>Get In Touch</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt eos dicta? Exercitationem in, error magnam quia a corrupti sint, saepe reiciendis corporis obcaecati officiis laborum tempora commodi, ullam impedit eius nostrum aliquam! Quam illo ex ducimus eaque doloribus unde.</p>
+            <br>
+            <h1>My Address</h1>
+            <h3> <i class="fas fa-map-marker-alt"> Bhubaneswar.</i></h3>
+            <h3> <i class="fas fa-phone-square">  9304121798</i></h3>
+            <h3 id="mail"> <i class="far fa-envelope"><a href="mailto:1906351@kiit.ac.in" > 1906351@kiit.ac.in</a></i></h3>
+        </div>
+    </div>
     </footer>
 </body>
 

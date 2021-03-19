@@ -185,7 +185,7 @@
     .skills {
         padding-top: 70px;
         height: 80vh;
-        background: linear-gradient(45deg, rgb(1, 250, 134), rgb(255, 236, 68));
+        background: linear-gradient(75deg, rgb(58, 144, 243), rgb(0, 255, 234));
     }
 
     .skills_logo {
@@ -259,6 +259,13 @@
         background-color: rgb(255, 60, 0);
     }
 
+    .twenty_percent {
+        width: 30%;
+        height: inherit;
+        border-radius: 0.8rem;
+        background-color: rgb(88, 115, 231);
+    }
+
     span {
         margin-left: 1.5em;
     }
@@ -317,7 +324,7 @@
     .achievements {
         padding-top: 75px;
         height: 160vh;
-        background: repeating-linear-gradient(45deg, rgb(0, 255, 115), rgb(255, 251, 14) 10px);
+        background: linear-gradient(75deg, rgb(58, 144, 243), rgb(0, 255, 234));
     }
 
     .achievements_logo {
@@ -338,7 +345,7 @@
 
     .certificate img {
         margin-top: 100px;
-        width: 40vw;
+        width: 35vw;
         height: 50vh;
     }
 
@@ -386,52 +393,75 @@
 
     }
 
-    .contact_content{
+    .contact_content {
         display: flex;
         flex-wrap: wrap;
-        justify-content:space-evenly;
+        justify-content: space-evenly;
         align-items: center;
 
     }
-    .form_container {
-        text-align: center;
-        width: 50%;
-    }
-
-    .form_container h1 {
-        font-size: 40px;
-        font-weight: bold;
-        padding-bottom: 10px;
-    }
-
-    .form_container h2 {
-        text-align: left;
-    }
 
     .box {
-        width: 65%;
-        border-bottom: 2px solid purple;
-        margin-left: 100px;
+        width: 40%;
+        ;
+        background: rgba(0, 0, 0, 0.7);
+        box-sizing: border-box;
+        box-shadow: 0, 15px, 25px, rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
     }
 
-    .box input {
-        width: 70%;
-        background: none;
+    .box h1 {
+        margin: 0 0 30px;
+        padding: 0;
+        color: white;
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    .box .inputbox {
+        position: relative;
+    }
+
+    .box .inputbox input {
+        width: 90%;
+        margin-top: 2%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #ffff;
+        margin-bottom: 30px;
         border: none;
         outline: none;
-
+        background: transparent;
+        padding-left: 40px;
     }
 
-    ::placeholder {
-        color: rgba(255, 255, 255, 0.747);
-        opacity: 0.9;
-        font-size: medium;
+    .box .inputbox label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #ffff;
+        padding-left: 40px;
+        pointer-events: none;
+        transition: 0.5s;
+    }
+
+    .box .inputbox input:focus~label,
+    .box .inputbox input:valid~label {
+        top: -25px;
+        left: 0;
+        color: white;
+        font-size: 15px;
     }
 
     .btn button {
+        position: relative;
+        left: 40%;
         cursor: pointer;
         outline: none;
         margin-top: 30px;
+        margin-bottom: 5%;
         padding: 10px;
         width: 110px;
         border-radius: 25px;
@@ -447,23 +477,24 @@
     }
 
     .btn button:hover {
-        background-color: rgb(247, 63, 63);
+        background-color: rgb(63, 164, 247);
         box-shadow: 2px 2px 5px 2px;
         transition: 0.3s;
     }
-    .address_container{
+
+    .address_container {
         height: 75vh;
         width: 30%;
     }
-    .address_container p{
+
+    .address_container p {
         font-size: medium;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    #mail a{
+
+    #mail a {
         text-decoration: none;
-
     }
-
 </style>
 
 <body>
@@ -568,6 +599,14 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="skills_progress">
+                    <div class="twenty_percent">
+                        <div class="skill_name">
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -656,38 +695,41 @@
         </div>
 
         <div class="contact_content">
-        <div class="form_container">
-            <h1>Contact ME!</h1>
-            <form action="backened.php">
-                <div class="box">
-                    <h2>Your Name</h2>
-                    <input type="text" placeholder="Enter your name">
-                </div>
+            <div class="box">
+                <h1>Contact ME!</h1>
+                <form action="backened.php">
+                    <div class="inputbox">
+                        <input type="text" placeholder="">
+                        <label for="">Your Name</label>
+                    </div>
+                    <br>
+                    <div class="inputbox">
+                        <input type="email" placeholder="">
+                        <label for="">Your e-mail</label>
+                    </div>
+                    <br>
+                    <div class="inputbox">
+                        <input type="text" placeholder=" ">
+                        <label for="">Your Message</label>
+                    </div>
+                    <div class="btn">
+                        <button><a href="mailto:1906351@kiit.ac.in">SEND</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="address_container">
+                <h1>Get In Touch</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt eos dicta? Exercitationem in,
+                    error magnam quia a corrupti sint, saepe reiciendis corporis obcaecati officiis laborum tempora
+                    commodi, ullam impedit eius nostrum aliquam! Quam illo ex ducimus eaque doloribus unde.</p>
                 <br>
-                <div class="box">
-                    <h2>Your E-mail</h2>
-                    <input type="email" placeholder="Enter your e-mail">
-                </div>
-                <br>
-                <div class="box">
-                    <h2>Your Message</h2>
-                    <input type="text" placeholder=" Enter your message">
-                </div>
-                <div class="btn">
-                    <button><a href="mailto:1906351@kiit.ac.in">SEND</a></button>
-                </div>
-            </form>
+                <h1>My Address</h1>
+                <h3> <i class="fas fa-map-marker-alt"> Bhubaneswar.</i></h3>
+                <h3> <i class="fas fa-phone-square"> 9304121798</i></h3>
+                <h3 id="mail"> <i class="far fa-envelope"><a href="mailto:1906351@kiit.ac.in">
+                            1906351@kiit.ac.in</a></i></h3>
+            </div>
         </div>
-        <div class="address_container">
-            <h1>Get In Touch</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt eos dicta? Exercitationem in, error magnam quia a corrupti sint, saepe reiciendis corporis obcaecati officiis laborum tempora commodi, ullam impedit eius nostrum aliquam! Quam illo ex ducimus eaque doloribus unde.</p>
-            <br>
-            <h1>My Address</h1>
-            <h3> <i class="fas fa-map-marker-alt"> Bhubaneswar.</i></h3>
-            <h3> <i class="fas fa-phone-square">  9304121798</i></h3>
-            <h3 id="mail"> <i class="far fa-envelope"><a href="mailto:1906351@kiit.ac.in" > 1906351@kiit.ac.in</a></i></h3>
-        </div>
-    </div>
     </footer>
 </body>
 

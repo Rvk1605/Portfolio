@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Kaushan+Script&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/e53f16418b.js" crossorigin="anonymous"></script>
+    
 </head>
 <style>
     body {
@@ -18,8 +19,8 @@
     }
 
     .header {
-        height: 72vh;
-        width: 100vw;
+        height: 75vh;
+        width: 100%;
         background-image: url("https://source.unsplash.com/WLUHO9A_xik/1600x900");
         background-size: 100vw;
         background-repeat: no-repeat;
@@ -107,11 +108,12 @@
 
     /* Social Platforms Decoration */
     .social {
-        position: absolute;
-        right: 30px;
+        position:fixed;
+        right: 0px;
         display: inline-block;
-        margin-top: 80px;
+        margin-top: 60px;
         margin-right: 25px;
+        
     }
 
     .social ul {
@@ -120,7 +122,7 @@
 
     .social ul li i {
         padding: 20px;
-        margin-top: 10px;
+        margin-top: 15px;
         color: aliceblue;
     }
 
@@ -130,7 +132,7 @@
     }
 
     #insta:hover a i {
-        color: white;
+        color: rgb(0, 238, 255);
     }
 
     #google:hover a i {
@@ -185,7 +187,9 @@
     .skills {
         padding-top: 70px;
         height: 80vh;
-        background: linear-gradient(75deg, rgb(58, 144, 243), rgb(0, 255, 234));
+        background-color: #ffbd77;
+        background-image: linear-gradient(319deg, #ffbd77 0%, #f0f4a4 37%, #acfcd9 100%);
+
     }
 
     .skills_logo {
@@ -275,6 +279,7 @@
         padding-top: 70px;
         text-align: center;
         height: 160vh;
+        
 
     }
 
@@ -290,8 +295,10 @@
         display: block;
         height: 200px;
         width: 40%;
-        margin: 25px;
-        background-color: rgb(220, 224, 224);
+        margin: 15px;
+        background-color: #f9c1b1;
+        background-image: linear-gradient(315deg, #f9c1b1 0%, #fb8085 74%);
+
         z-index: -1;
     }
 
@@ -302,10 +309,10 @@
     .education_divider {
         position: absolute;
         height: 85%;
-        width: 30px;
-        background-color: gray;
+        width: 25px;
+        background-color: rgb(180, 170, 170);
         top: 265%;
-        left: 48%;
+        left: 49%;
         z-index: -1;
     }
 
@@ -316,7 +323,7 @@
     }
 
     .divider_icon i {
-        color: orangered;
+        color: rgb(0, 255, 221);
 
     }
 
@@ -324,7 +331,9 @@
     .achievements {
         padding-top: 75px;
         height: 160vh;
-        background: linear-gradient(75deg, rgb(58, 144, 243), rgb(0, 255, 234));
+        background-color: #c2eaba;
+background-image: linear-gradient(319deg, #c2eaba 0%, #c5f4e0 37%, #efc2cf 100%);
+
     }
 
     .achievements_logo {
@@ -356,22 +365,51 @@
         padding-top: 75px;
         text-align: center;
         height: 100vh;
-        border: 3px solid black;
+        background-color: #f8ceec;
+background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+
+
     }
 
     /* this is hobby section */
     .hobbies {
         padding-top: 75px;
         text-align: center;
-        height: 100vh;
-        border: 3px solid black;
+        height: 110vh;
+        background-color: #e4eee9;
+        background-image: linear-gradient(315deg, #e4eee9 0%, #93a5ce 74%);
     }
+    .hobbies_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        
+    }
+    .hobby_container{
+        margin-top: 5%;
+        width: 30vw;
+        height: 40vh;
+    }
+    
+    .hobby_container img{
+        width: 70%;
+        height: 70%;
+        align-content: center;
 
+    }
+    .hobby_btn{
+        outline: none;
+        border: none;
+        margin-top: 5%;
+        font-weight: bolder;
+        border:2px dashed red;
+    }
     /* this is contact section */
     .contact {
         padding-top: 75px;
-        height: 100vh;
-        background: linear-gradient(75deg, rgb(58, 144, 243), rgb(0, 255, 234));
+        height: 110vh;
+        background-color: #fce043;
+        background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
     }
 
     .contact_logo {
@@ -390,7 +428,6 @@
         font-size: 60px;
         font-weight: bold;
         margin-left: 10px;
-
     }
 
     .contact_content {
@@ -403,7 +440,6 @@
 
     .box {
         width: 40%;
-        ;
         background: rgba(0, 0, 0, 0.7);
         box-sizing: border-box;
         box-shadow: 0, 15px, 25px, rgba(0, 0, 0, 0.6);
@@ -511,7 +547,6 @@
                 <li class="item"><a href="#projectshow"><strong>Projects</strong></a></li><b>|</b>
                 <li class="item"><a href="#hobbiesshow"><strong>Hobby</strong></a></li><b>|</b>
                 <li class="item"><a href="#contactshow"><strong>Contact</strong></a></li>
-
             </ul>
         </div>
 
@@ -523,16 +558,15 @@
         <div class="social">
             <ul>
                 <li class="social_logo"><a href="https://www.facebook.com/" target="_blank"><i
-                            class="fab fa-facebook fa-2x"></i></a></li>
+                            class="fab fa-facebook-square fa-2x"></i></a></li>
                 <li class="social_logo" id="insta"><a href="https://www.instagram.com/" target="_blank"><i
-                            class="fab fa-instagram fa-2x"></i></a></li>
+                            class="fab fa-twitter fa-2x"></i></a></li>
                 <li class="social_logo"><a href="https://www.linkedin.com/in/rajveer-kumar-4757021a1/"
                         target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
                 <li class="social_logo" id="google"><a href="https://myaccount.google.com/" target="_blank"><i
                             class="fab fa-google-plus-g fa-2x"></i></a></li>
             </ul>
         </div>
-
     </header>
 
     <main class="middle">
@@ -619,17 +653,17 @@
             <div class="education_container">
                 <div class="education_box">
                     <h1 style="color: blue;">Xth</h1>
-                    <h3 style="color: rgb(9, 255, 0);">St Dominic Savio's High School</h3>
+                    <h2 style="color: rgb(18, 197, 12);">St Dominic Savio's High School</h2>
                     <h4>CGPA : 9.4</h4>
                 </div>
                 <div class="education_box">
                     <h1 style="color: blue;">10+2</h1>
-                    <h3 style="color: rgb(30, 255, 0);">St Dominic Savio's High School</h3>
+                    <h2 style="color: rgb(31, 194, 10);">St Dominic Savio's High School</h2>
                     <h4> Percentage : 81%</h4>
                 </div>
                 <div class="education_box">
                     <h1 style="color: blue;">B-tech</h1>
-                    <h3 style="color: rgb(0, 255, 42);">KIIT University</h3>
+                    <h2 style="color: rgb(8, 150, 32);">Kalinga Institute of Industrial Technology</h2>
                     <h4> CGPA : 9.4</h4>
                 </div>
                 <div class="path"></div>
@@ -681,7 +715,26 @@
                 <i class="fas fa-user-astronaut fa-3x"> Hobbies</i>
             </div>
             <div class="hobbies_container">
-
+                <div class="hobby_container">
+                    <img src="headphones.svg" alt="">
+                    <button class="hobby_btn">LISTENING MUSIC</button>
+                </div>
+                <div class="hobby_container">
+                    <img src="watching-a-movie.svg" alt="">
+                    <button class="hobby_btn">WATCHING MOVIES</button>
+                </div>
+                <div class="hobby_container">
+                    <img src="playing.svg" alt="">
+                    <button class="hobby_btn">PLAYING VIDEO GAMES</button>
+                </div>
+                <div class="hobby_container">
+                    <img src="football.svg" alt="">
+                    <button class="hobby_btn">PLAYING FOOTBALL</button>
+                </div>
+                <div class="hobby_container">
+                    <img src="adventurer.svg" alt="">
+                    <button class="hobby_btn"> ADVENTURE TRAVEL </button>
+                </div>
             </div>
         </div>
 
